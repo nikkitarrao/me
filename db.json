@@ -1,1 +1,118 @@
-
+{
+    "questionsQ1": [
+        {
+            "id": 1,
+            "type": "multipleChoice",
+            "prompt": "How do you declare an ArrayList of type Integer named 'values?' ",
+            "choices": [
+                "ArrayList values = new ArrayList<Integer>();",
+                "ArrayList values = new ArrayList<int>();",
+                "ArrayList values = new ArrayList<Integer>;",
+                "ArrayList values = new ArrayList<int>;"
+            ],
+            "correctChoice": "A",
+            "explanation": "ArrayLists cannot be composed of primitive data types, and since int is a primative type, you must use the wrapper class version of int, Integer. Also, ArrayList is a class, which is why is must include parenthases at the end."
+        },
+        {
+            "id": 2,
+            "type": "multipleChoice",
+            "prompt": "What is the name for the elements that make-up a linked list?",
+            "correctChoice": "node",
+            "explanation": "A linked list consists of nodes, where each node contains a data field and a reference link to the next node in the list."
+        },
+        {
+            "id": 3,
+            "type": "multipleChoice",
+            "prompt": "What method has the same name as the class and no return type?",
+            "choices": [
+                "compare To method",
+                "constructor method",
+                "equals method",
+                "round method"
+            ],
+            "correctChoice": "B",
+            "explanation": "Constructor methods are unique methods that have the same name as the class and no return type. The other methods listed are just built-in java methods."
+        },
+        {
+            "id": 4,
+            "type": "image",
+            "prompt": "Which image shows a recursive method that would have a StackOverFlowError?",
+            "choices": [
+                "wrongAnswerQuiz1.png",
+                "rightAnswerQuiz1.png"
+            ],
+            "correctChoice": "A",
+            "explanation": "The second recursive call does not have a terminal condition, and so it will loop infinitely leading to a StackOverFlowError."
+        },
+        {
+            "id": 5,
+            "type": "multipleChoice",
+            "prompt": "When dealing with file handling, what must you first import?",
+            "choices": [
+                "java.io.File",
+                "java.io.file",
+                "java.util.File",
+                "java.util.file"
+            ],
+            "correctChoice": "A",
+            "explanation": "The File class is apart of the java.io package, and File must start with an uppercase 'F' as the language is case-sensitive. "
+        }
+    ],
+    "questionsQ2": [
+        {
+            "id": 1,
+            "type": "multipleChoice",
+            "prompt": "Which choice shows the correct syntax for defining a function named 'value' with paramaters x and y using arrow syntax?",
+            "choices": [
+                "function value (x,y) => { }",
+                "function value = (x,y) => { }",
+                "let value = x,y => { }",
+                "let value = (x,y) => { }"
+            ],
+            "correctChoice": "D",
+            "explanation": "You must invoke arrow syntax using a variable, so in this case, we declare a variable named 'value' using the 'let' keyword. Also, the parameters x and y must be in parenthases. "
+        },
+        {
+            "id": 2,
+            "type": "narrative",
+            "prompt": "Which symbols determines if two values are of the same data-type as well as value in Javascript?",
+            "correctChoice": "===",
+            "explanation": "Javascript has two different opperators that are able to deetermine whether values are equal. The non-strict equals operator only compares value (regardless of data-type), and is denoted with the symbol '=='. The strict equals operator, on the other hand, which determines if two values are of both the same data-type as well as value is denoted by '==='. "
+        },
+        {
+            "id": 3,
+            "type": "multipleChoice",
+            "prompt": "What is the correct keyword for declaring a variable with a block scope?",
+            "choices": [
+                "var",
+                "const",
+                "let",
+                "int"
+            ],
+            "correctChoice": "C",
+            "explanation": "In Javascript you can define a variable with both the keywords 'let' and 'var', but 'var' has a lexical scope while 'let' has a block scope."
+        },
+        {
+            "id": 4,
+            "type": "image",
+            "prompt": "Which image shows the correct syntax of a JSON Object?",
+            "choices": [
+                "rightAnswerQuiz2.png",
+                "wrongAnswerQuiz2.png"
+            ],
+            "correctChoice": "A",
+            "explanation": "JSON objects allow objects to be represented in text format. The syntax is denoted by key-value pairs with a colon separating the key from the value, and a comma separating the key-value pairs from one another."
+        },
+        {
+            "id": 5,
+            "type": "multipleChoice",
+            "prompt": "What is the correct syntax for a string literal?",
+            "choices": [
+                "'${text}'",
+                "`${text}`",
+                "/${text}/",
+                "${text}"
+            ],
+            "correctChoice": "B",
+            "explanation": "This is just the syntax for string literal."
+        }
