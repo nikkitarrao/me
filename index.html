@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- These are the tags necessary to implement bootstrap -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- These are the tags necessary to implement handlebars -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <!-- my css and javascriptfiles -->
+    <link rel="stylesheet" href="css.css">
+    <script src="quizLogic.js"></script>
+
+    <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+   
+    <style>
+      @import url('https://fonts.cdnfonts.com/css/vcr-osd-mono');
+    </style>
+   
+    <title> nikkitarrao </title>
+    <link rel="icon" href="resources2/disco.png">
+  </head>
+
+  <body>
+      <!-- NAV BAR <nav class = "fixed-top"> -->
+      <!-- Nav pills -->
+      <ul class="nav nav-pills fixed-top" style = "padding: 20px; font-size: 30px;">
+        <li class="nav-item"> <a class="nav-link active" data-toggle="pill" href="#home">HOME</a></li>
+        <li class="nav-item"> <a class="nav-link" data-toggle="pill" href="#about-me">ABOUT ME</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#resume">RESUME</a></li> 
+        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#art">ART</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#for-fun">FOR FUN</a></li>
+        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#contact">CONTACT</a></li>
+      </ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+
+  <div class="tab-pane active" id="home" >
+    <div class = "container-fluid" >
+      <div class = "row">
+        <video autoplay muted id="background-videotemp">
+          <source src="resources2/staticstart.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop id="background-video">
+          <source src="resources2/staticvideo.mp4" type="video/mp4">
+        </video>
+        <div class="container-sm text-center" id = "name" style="display: none;">
+          <h1 class="display-1"> <b> NIKKITA TARRAO </b> </h1> <!-- change the font maybe -->
+          <h2 class="display-6"> <b> STUDENT - WEB DESIGNER - ARTIST </b> </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-pane container-fluid fade" id="about-me">
+    <div id = "computer" >
+      <div style=" padding-top: 7%;"></div>
+        <div class=" container-sm text-center">
+          <div >
+            <h1> <code style = "color:#20D77E; ">ALL ABOUT ME:</code></h1>
+          </div class = container-sm>
+            <div > <p id = "about-me-section " class = "typewriter"> <code style = "color:#20D77E; ">> Hello! My name is Nikkita Tarrao and I am a student and artist from Queens, NY.</code></p></div>
+            <div > <p id = "about-me-section " class = "typewriter"> <code style = "color:#20D77E; ">> I am currently pursuing my bachelor's degree in computer science from St. John's University</code></p></div>
+            <div > <p id = "about-me-section " class = "typewriter"> <code style = "color:#20D77E; ">and am expected to graduate in December 2024.</code></p></div>
+            <div > <p id = "about-me-section " class = "typewriter"> <code style = "color:#20D77E; ">> As a passionate and dedicated student, I am eager to further develop my research skills and </code></p></div>
+            <div > <p id = "about-me-section " class = "typewriter"> <code style = "color:#20D77E; "> contribute meaningfully to the dynamic field of computer science. With a background in fine  </code></p></div>
+            <div > <p id = "about-me-section " class = "typewriter"> <code style = "color:#20D77E; "> arts, my dream is to fuse my creative and innovative skills with my technical skills. </code></p></div>
+            <div > <p id = "about-me-section " class = "typewriter"> <code style = "color:#20D77E; "> I am mainly interested in web and app development, as well as animation and design crafted through code. </code></p></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="tab-pane container-fluid fade" id="resume">
+    <div style = "padding-top: 5%;"></div>
+    <h1 class= "header-resume text-center">
+      <span data-text="RESUME:" class = "word text-center">
+        RESUME:
+      </span>
+    </h1>
+    <div class = "row" style= "margin-top: 4%;">
+      <div class="col-lg-3">
+        <h2>
+          SKILLS
+        </h2>
+        <p>Java </p>
+        <p>HTML and CSS</p>
+        <p> Javascript</p>
+        <p> Bootstrap and Handlebars</p>
+        <p> Node.js</p>
+        <p> Front and Back-end development through Glitch and GitHub</p>
+      </div>
+      <div class="col-lg-9">
+        <h2>
+          WORK EXPERIENCE
+        </h2>
+        <h3>
+          Afterschool Teacher
+        </h3>
+        <h4>
+          Manhasset Afterschool Xperience (M.A.X.) - Manhasset, NY      Sept 2022 - Present
+        </h4>
+        <ul>
+          <li>Assisted children with homework assignments in both math and English</li> 
+          <li> Supported, guided, and motivated children to complete various tasks</li> 
+          <li>  Helped maintain a clean and safe environment for children to play</li> 
+        </ul>
+      </div>
+    </div>
+    <div class = "row" >
+      <div class="col-lg-3">
+        <h2>
+          EDUCATION
+        </h2>
+        <p>
+          St. John’s University
+          Queens, NY
+          Expected Graduation, December 2024
+          Expected Degree, Bachelor of Science in Computer Science
+          Clare Boothe Luce Scholar 3.72 GPA
+        </p>
+      </div>
+      <div class="col-lg-9">
+        <p>
+
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="tab-pane container-fluid fade" id="art">
+    <div class = "row" style="background-color:white; padding-bottom: 2%; padding-top:5%;">
+      <div class="col-lg-6"><img src= "resources2/niquita2.png" class="rounded img-fluid" > </div>
+      <div class="col-lg-6"><img src= "resources2/me.png" class="rounded img-fluid" style="width: 60%; height:auto;" > </div>
+    </div>
+  </div>
+
+  <div class="tab-pane container-fluid fade" id="for-fun">
+      <video autoplay muted loop id="welcome">
+        <source src="resources2/welcome.mp4" type="video/mp4">
+      </video>
+  <br>
+  <div id = "display-data" class = "jumbotron text-center"></div>
+  <br>
+  <div id = "follow-me" class = "jumbotron text-center"></div>
+</div>
+
+  <div class="tab-pane container-fluid fade" id="contact">
+    <div class = "row">
+      <video autoplay muted loop id="ransom">
+        <source src="resources2/ransom.mp4" type="video/mp4">
+      </video> 
+    </div>
+    <div class = "row">
+      <div class="col-lg-6"><img src= "resources2/nikki.png" id ="mypicture" class="rounded img-fluid"> </div>
+      <div class="col-lg-6"> <p> contact me at: @ nikkitatarrao@gmail.com</p></div>
+    </div>
+  </div>
+      
+
+
+</div>
+  
+  </body>
+</html>
+
+<!-- initial screen --> 
+<script id="initialScreen" type = "text/x-handlebars-template">
+  <form id = "form" >
+  <h2> Fun Personality Quiz Section</h2>
+  <div> <label for="quiz-selection"> Which quiz would you like to take?:</label>
+  <select name="quiz-selection" id="quiz-selection">
+    <option value="1"> Which Evil Creature Are You Quiz? </option>
+    <option value="2"> Which type of Sea Creature Are You Quiz? </option>
+  </select> </div> 
+    <br>
+  <div> <input id="submit" type = "submit" data-viewAction="startQuiz"> </div>  
+  </form>
+  </script>
+
+<!-- quiz question: multiple choice text buttons --> 
+<script id="quiz_view" type = "text/x-handlebars-template">
+    <div id = "question"> <h3> Question {{id}} : {{prompt}} </h3> </div>
+    <form id = "form" data-correct-choice= "{{correctChoice}}">
+    <div> 
+        <input type = "radio" id = "A" name = "choicesMultipleChoice" value = "A">
+            <label for ="A"> A. {{choices.[0]}} </label>
+            <br>
+        <input type = "radio" id = "B" name = "choicesMultipleChoice" value = "B">    
+            <label for="B"> B. {{choices.[1]}} </label>
+            <br>
+        <input type = "radio" id = "C" name = "choicesMultipleChoice" value = "C">     
+            <label for="C"> C. {{choices.[2]}} </label>
+            <br>
+        <input type = "radio" id = "D" name = "choicesMultipleChoice" value = "D">
+            <label for="D"> D. {{choices.[3]}} </label>  
+    </div>
+    <div> <input id = "next" type = "submit" data-viewAction="nextQuestion" data-currentquestionid="{{id}}"> </div> 
+    </form>
+    <br>
+</script>
+
+<!-- final screen --> 
+<script id="finalScreen" type = "text/x-handlebars-template">
+    <h3> Congratulations <span id = "name"> </span>, you passed the quiz! </h3>
+    <div> <button id = "re-take" data-viewAction="re-take"> Re-take the same quiz </button> </div>
+    <br>
+    <div> <button id = "return" data-viewAction="return"> Return to homepage </button> </div>
+  </script>
+
+<!-- background video home screen-->
+<script>
+    document.getElementById('background-videotemp').addEventListener('ended', function () {
+      // Once the temporary video ends, switch to the looped video 
+      document.getElementById('background-video').style.display = 'block';
+      document.getElementById('background-videotemp').style.display = 'none';
+      document.getElementById('background-video').play();
+      document.getElementById('name').style.display = 'block';
+    });
+
+  </script>

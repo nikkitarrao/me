@@ -1,0 +1,164 @@
+body{
+  font-family: 'Consolas', monospace;
+  text-align: center;
+  color:rgb(233, 234, 219);
+  cursor: url('resourses2/cursor.png'), auto;
+}
+/* Tab 1 - HOME */
+#background-video {
+    object-fit: cover; 
+    height: 100vh; 
+    width:  100vw; 
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    background-size: 100% 100%;
+  }
+#background-videotemp {
+    object-fit: cover; 
+    height: 100vh; 
+    width:  100vw; 
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    background-size: 100% 100%;
+  }
+#name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:rgb(233, 234, 219);
+    font-family: 'VCR OSD Mono', sans-serif; 
+    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+}
+/* Nav Bar */
+.nav-link{
+   color:rgb(233, 234, 219);
+    }
+.nav-item {
+  font-family: 'Consolas', monospace;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.nav-pills .nav-item .nav-link.active{
+  background-color: black;
+}
+/* Tab 2 - ABOUT ME */
+#about-me{
+  background-color: #0F0F0D;
+}
+#computer{
+  background-image: url('resources2/computer2.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100%;
+  height:100vh;
+  position: relative;
+}
+#about-me-section{
+  overflow:hidden;
+  word-wrap: break-word; /* This ensures long words wrap to the next line */
+  max-width: 20%;
+}
+
+/* Tab 3 - RESUME */
+#resume{
+  background-color: #0F0F0D;
+  box-sizing: border-box; 
+  border-width:20px;
+  border-style:solid;
+  border-color: #0800FF;
+}
+#ransom{
+  width:  100%; 
+  overflow: hidden;
+  object-fit: fill;
+  background-size: contain;
+}
+.header-resume{
+  margin-bottom:4%;
+}
+
+/* Tab 5 - FOR FUN */
+#for-fun{
+  background-color: #925773;
+  padding:20px;
+  border-width:20px;
+  border-style:solid;
+  border-color: #3E4B8C;
+}
+.jumbotron{
+  background-color: #D99D47;
+}
+#welcome{
+  width:  100%; 
+  height:200px;
+  overflow: hidden;
+  object-fit: fill;
+  background-size: contain;
+}
+
+/* Tab 6 - CONTACT */
+#mypicture{
+  border: 2px solid #000; 
+  margin: 10%;
+  width: 50%;
+}
+#contact{
+  background-color: #0F0F0D;
+  background-color: #9BBE60;
+}
+
+/* karaoke font taken from internet*/
+h1 {
+  font-weight: bold;
+  font-size: 4em;
+}
+
+.word {
+  position: relative;
+  white-space: nowrap;
+  color: lightblue;
+  text-shadow: 0 0 3px rgba(0,0,0,1); 
+}
+
+.word::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: red;
+  overflow: hidden;
+  width: 40%;
+  animation: run-text 5s infinite linear;
+  text-shadow: 0 0 3px rgba(255,255,255,1); 
+}
+
+@keyframes run-text {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* typewriter effect */
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+  /*
+    background-color: #222;
+  
