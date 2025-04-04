@@ -2,7 +2,11 @@ body{
   font-family: 'Consolas', monospace;
   text-align: center;
   color:rgb(233, 234, 219);
-  cursor: url('resourses2/cursor.png'), auto;
+  cursor: url('resources2/cursor.png'), auto;
+}
+/* Custom cursor when pointer is active */
+a:hover, button:hover, .clickable:hover {
+    cursor: url('resources2/pointer.png'), pointer;
 }
 /* Tab 1 - HOME */
 #background-video {
@@ -30,9 +34,13 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color:rgb(233, 234, 219);
-    font-family: 'VCR OSD Mono', sans-serif; 
-    text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000;
+    color:#F3CE32;
+    font-family: 'Helvetica', 'Arial', sans-serif; /* 'Helvetica' for Helvetica, with fallback */
+    font-weight: 100; /* Medium weight for Helvetica */
+    font-style: italic;
+    /* text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000; */
+    background-color: black; /* Black background */
+    padding: 10px;
 }
 /* Nav Bar */
 .nav-link{
@@ -50,7 +58,6 @@ body{
   background-color: #0F0F0D;
 }
 #computer{
-  background-image: url('resources2/computer2.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center top;
