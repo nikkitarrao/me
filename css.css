@@ -41,18 +41,43 @@ a:hover, button:hover, .clickable:hover {
     /* text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000; */
     background-color: black; /* Black background */
     padding: 10px;
+    z-index: 1;
 }
+/* to add a shadow behind the name */
+#name::before {
+    content: "";
+    position: absolute;
+    top: 15px;   /* Slight offset for shadow effect */
+    left: 15px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.7);
+    z-index: -1; /* Behind the main element */
+}
+
+
 /* Nav Bar */
 .nav-link{
-   color:rgb(233, 234, 219);
-    }
+    color:rgb(233, 234, 219);
+    font-size: 20px;
+    font-weight: bold;
+}
 .nav-item {
-  font-family: 'Consolas', monospace;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+   font-family: 'Consolas', monospace;
+    margin-right: 8px;
+    background-color: black;
+}
+.nav-link:hover {
+    color: #F3CE32;
+    border-radius: 10px;
 }
 .nav-pills .nav-item .nav-link.active{
-  background-color: black;
+    background-color: #F3CE32;
+    color: black;
+    border-style: solid;
+    border-radius: 0;
 }
+
 /* Tab 2 - ABOUT ME */
 #about-me{
   background-color: #0F0F0D;
@@ -73,11 +98,8 @@ a:hover, button:hover, .clickable:hover {
 
 /* Tab 3 - RESUME */
 #resume{
-  background-color: #0F0F0D;
-  box-sizing: border-box; 
-  border-width:20px;
-  border-style:solid;
-  border-color: #0800FF;
+    background-color: #9BBE60;
+    box-sizing: border-box;
 }
 #ransom{
   width:  100%; 
