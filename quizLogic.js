@@ -119,7 +119,7 @@ return false;
 
 //Asynchronous Network Request
 async function backEndRestAPI(quizId,qid, view){
-  let api_endpoint = `https://my-json-server.typicode.com/nikkitarrao/SinglePageApplication/${quizId}/${qid}`
+  let api_endpoint = `https://my-json-server.typicode.com/nikkitarrao/me/tree/ascii-attempt/${quizId}/${qid}`
   const response = await fetch(api_endpoint)
   const data = await response.json()
   console.log(data)
