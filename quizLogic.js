@@ -26,7 +26,7 @@ handleViewEvents =  (e) => {
   console.log(e.target.dataset.viewaction);
   var name = document.querySelector('#name').value; 
   console.log(name);
-  qid = 1;
+  let qid = 1;
     //entering quiz 1
     if((document.querySelector('#quiz-selection').value === "1")){
       quizId = "questionsQ1";
@@ -38,7 +38,20 @@ handleViewEvents =  (e) => {
       quizId = "questionsQ2";
       console.log(quizId);
       backEndRestAPI(quizId, qid, "#quiz_view");
-    }
+    } 
+    //entering quiz 3
+    else if(document.querySelector('#quiz-selection').value === "3"){
+      quizId = "questionsQ3";
+      console.log(quizId);
+      backEndRestAPI(quizId, qid, "#quiz_view");
+    } 
+    //entering quiz 4
+    else if(document.querySelector('#quiz-selection').value === "4"){
+      quizId = "questionsQ4";
+      console.log(quizId);
+      backEndRestAPI(quizId, qid, "#quiz_view");
+    } 
+
     return false;
   }
 
