@@ -1,5 +1,5 @@
 {
-    "evilCreatureQuiz": [
+    "questionsQ1": [
         {
             "id": 1,
             "prompt": "What is your evil goal?",
@@ -88,7 +88,7 @@
         }
 
     ],
-    "gayQuiz": [
+    "questionsQ2": [
         {
             "id": 1,
             "prompt": "Do you think you are gay?",
@@ -118,7 +118,7 @@
             "photo": ""
         }
     ], 
-    "meQuiz": [
+    "questionsQ3": [
         {
             "id": 1,
             "prompt": "Who am I to you?",
@@ -184,7 +184,7 @@
         }
 
     ],
-    "cancelledQuiz": [
+    "questionsQ4": [
         {
             "id": 1,
             "prompt": "After being cancelled, how long do you wait to respond?",
