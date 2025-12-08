@@ -4,13 +4,11 @@
             "id": 1,
             "prompt": "What is your evil goal?",
             "choices": [
-                "To defeat my enemies",
                 "To kill Harry Potter",
+                "To get a girlfriend",
                 "Isolate and eat children",
-                "To get a girlfriend"
-            ],
-            "correctChoice": "A",
-            "explanation": ""
+                "To defeat my enemies"
+            ]
         },
         {
             "id": 2,
@@ -20,33 +18,27 @@
                 "No bitches",
                 "My height",
                 "My shape"
-            ],
-            "correctChoice": "",
-            "explanation": ""
+            ]
         },
         {
             "id": 3,
             "prompt": "Who would you want as evil henchman?",
             "choices": [
-                "Goombas",
                 "Racists",
+                "Goombas",
                 "Cultists",
                 "No one, I ride solo"
-            ],
-            "correctChoice": "B",
-            "explanation": ""
+            ]
         },
         {
             "id": 4,
             "prompt": "What evil color do you wear?",
             "choices": [
-                "Black and silver",
-                "I also dont wear clothes",
                 "Black",
+                "Black adn Silver",
+                "I also dont wear clothes",
                 "I dont wear clothes"
-            ],
-            "correctChoice": "A",
-            "explanation": ""
+            ]
         },
         {
             "id": 5,
@@ -54,11 +46,9 @@
             "choices": [
                 "Harry Potter",
                 "Mario",
-                "Spongebob",
-                "Everyone"
-            ],
-            "correctChoice": "A",
-            "explanation": ""
+                "All children",
+                "Sponebob"
+            ]
         }
     ],
     "resultsQuiz1" : [
@@ -133,15 +123,15 @@
         },
         {
             "id": 2,
-            "prompt": "What's my biggest insecurity?",
+            "prompt": "What color are my eyes ? (no peaking)?",
             "choices": [
                 "Striking Blue",
-                "",
-                "",
-                ""
+                "Striking Green",
+                "Striking Hazel",
+                "Striking Brown"
             ],
-            "correctChoice": "What color are my eyes ? (no peaking)",
-            "explanation": ""
+            "correctChoice": "C",
+            "explanation": "This is what is says on my license."
         },
         {
             "id": 3,
@@ -153,7 +143,7 @@
                 "Age is a construct"
             ],
             "correctChoice": "B",
-            "explanation": "I am 24"
+            "explanation": "I am 24..."
         },
         {
             "id": 4,
@@ -165,7 +155,9 @@
             "prompt": "Do I snore?",
             "choices": [
                 "Yes",
-                "No"
+                "No",
+                "Nah",
+                "What does this mean?"
             ],
             "correctChoice": "A",
             "explanation": "Unfortunately, I do."
@@ -174,12 +166,12 @@
     "resultsQuiz3" : [
         {
             "id": 1,
-            "creatureName" : "You Lose",
-            "explanation": "You don't know me at all, you just know the me I show you."
+            "creatureName" : "You Lose!",
+            "explanation": "You don't know me at all, you are just like everyone else."
         },
         {
             "id": 2,
-            "creatureName" : "You Win",
+            "creatureName" : "You Win!",
             "explanation": "Wow, you really know the true me."
         }
 
