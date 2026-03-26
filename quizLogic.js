@@ -3,16 +3,13 @@ document.addEventListener('DOMContentLoaded', function () {
   //Rendering Initial View
   backEndRestAPI("questionsQ1", 1, "#initialScreen");
 
-
   //event delegation for views
   document.querySelector('#display-data').addEventListener('click', (e) => {
     handleViewEvents(e);
   });
 
-
   return false;
 }); //end of DOMContentLoaded 
-
 
 let qid = 0;
 let counter = 0;
@@ -22,64 +19,57 @@ handleViewEvents = (e) => {
   if (e.target.type !== 'radio') {
     e.preventDefault();
   }
+
   if (e.target.dataset.viewaction == "startQuiz") {
     console.log(e.target.dataset.viewaction);
     qid = 1;
     //entering quiz 1
     if ((document.querySelector('#quiz-selection').value === "1")) {
       quizId = "questionsQ1";
-      console.log(quizId);
-      console.log(qid);
       backEndRestAPI(quizId, qid, "#quiz_view");
     }
     //entering quiz 2
     else if (document.querySelector('#quiz-selection').value === "2") {
       quizId = "questionsQ2";
-      console.log(quizId);
       backEndRestAPI(quizId, qid, "#quiz_view");
     }
     //entering quiz 3
     else if (document.querySelector('#quiz-selection').value === "3") {
       quizId = "questionsQ3";
-      console.log(quizId);
       backEndRestAPI(quizId, qid, "#quiz_view");
     }
     //entering quiz 4
     else if (document.querySelector('#quiz-selection').value === "4") {
       quizId = "questionsQ4";
-      console.log(quizId);
       backEndRestAPI(quizId, qid, "#quiz_view");
     }
-
     return false;
   }
 
   //handling each question
   console.log("qid: " + qid);
-  if (e.target.dataset.viewaction == "nextQuestion") {
-    qid++;
+  if (e.target.dataset.viewaction == "nextQuestion" && validateQuiz()) {
+    if(qid < 5){
+      qid++;
+      backEndRestAPI(quizId, qid, "#quiz_view");
+      console.log(qid);
+       return;
+    } 
+        // Personality quiz
+    if (!document.querySelector('#form').dataset.correctChoice) {
+      const result = findMostFrequent(answers);
+      backEndRestAPI(quizId, qid, "#finalScreen");
+    }
+    // Knowledge quiz
+    else {
+      if (counter / 5 >= 0.8) {
+        backEndRestAPI(quizId, qid, "#finalScreenPassed");
+      } else {
+        backEndRestAPI(quizId, qid, "#finalScreenFailed");
+      }
 
-
-
-    backEndRestAPI(quizId, qid, "#quiz_view");
-    console.log(qid);
   }
-  //end of test screen
-  //choice 1
-  else if (e.target.dataset.viewaction == "nextQuestion" && qid > 5 && counter / 5 >= 0.8) {
-    backEndRestAPI(quizId, qid, "#finalScreenPassed");
-    console.log(counter);
-    onsole.log(counter / 5);
-    // document.querySelector('#name').innerHTML = name;
-  }
-  else if (e.target.dataset.viewaction == "nextQuestion" && qid > 5 && counter / 5 >= 0.8) {
-    backEndRestAPI(quizId, qid, "#finalScreenFailed");
-  }
-  else if (e.target.dataset.viewaction == "nextQuestion" && qid > 5 && counter === 0) {
-    backEndRestAPI(quizId, qid, "#finalScreen");
-  }
-
-
+}
 
   //return button
   if (e.target.dataset.viewaction == "return") {
@@ -103,15 +93,17 @@ handleViewEvents = (e) => {
         console.log(e.target.value);
         console.log(document.querySelector('#form').dataset.correctChoice);
         console.log(rightAnswer);
+        // backEndRestAPI(quizId, qid, "#finalScreenPaased");
       }
       else {
         rightAnswer = false;
         console.log(e.target.value);
         console.log(document.querySelector('#form').dataset.correctChoice);
         console.log(rightAnswer);
+        // backEndRestAPI(quizId, qid, "#finalScreenFailed");
       }
     } else {
-        answers.push(e.target.value);
+        answers[qid - 1] = e.target.value;
     }
   }
 
@@ -119,6 +111,28 @@ handleViewEvents = (e) => {
   return false;
 } //end of handleViewsEvent
 
+function validateQuiz() {
+  const selected = document.querySelector('#form input[type="radio"]:checked');
+  return !!selected; // true if selected, false if not
+}
+
+function findMostFrequent(arr) {
+  const frequencyMap = {};
+  for (const element of arr) {
+    frequencyMap[element] = (frequencyMap[element] || 0) + 1;
+  }
+
+  let maxCount = 0;
+  let mostFrequentElement;
+
+  for (const element in frequencyMap) {
+    if (frequencyMap[element] > maxCount) {
+      maxCount = frequencyMap[element];
+      mostFrequentElement = element;
+    }
+  }
+  return mostFrequentElement;
+}
 
 //Asynchronous Network Request
 async function backEndRestAPI(quizId, qid, view) {
@@ -137,8 +151,6 @@ async function backEndRestAPI(quizId, qid, view) {
   document.querySelector('#display-data').innerHTML = html_element;
 }
 
-
-
 //Rendering View and Update DOM
 const renderView = (data, view) => {
   source = document.querySelector(view).innerHTML;
@@ -150,4 +162,3 @@ const renderView = (data, view) => {
 //making the cursor special
 const targetElement = document.querySelector("#for-fun");
 new cursoreffects.rainbowCursor({ element: targetElement });
-

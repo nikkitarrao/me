@@ -1,8 +1,9 @@
 body{
   font-family: 'Consolas', monospace;
   text-align: center;
-  color:rgb(233, 234, 219);
+  color:black;
   cursor: url('resources2/cursor.png'), auto;
+  background-color: #e7dfda;
 }
 /* Custom cursor when pointer is active */
 a:hover, button:hover, .clickable:hover {
@@ -10,7 +11,7 @@ a:hover, button:hover, .clickable:hover {
 }
 
 .header{
-  margin-bottom:5%;
+  margin-bottom:2%;
   padding-top: 5%;
   background-color: #9BBE60;
   box-sizing: border-box;
@@ -55,17 +56,6 @@ a:hover, button:hover, .clickable:hover {
     background-size: 100% 100%;
     z-index: 0;
   }
-#background-videotemp {
-    object-fit: cover; 
-    height: 100vh; 
-    width:  100vw; 
-    object-fit: fill;
-    background-repeat: no-repeat;
-    background-size: contain;
-    overflow: hidden;
-    background-size: 100% 100%;
-    z-index: 0;
-  }
 #name pre {
   color:rgb(233, 234, 219);
 }
@@ -78,6 +68,15 @@ a:hover, button:hover, .clickable:hover {
 }
 
 /* Tab 2 - ABOUT ME */
+#about-me-section{
+  background-color: #925773;
+  margin-bottom: 10%;
+  margin-bottom: 2%;
+}
+
+#me{
+  margin-bottom: 2%;
+}
 
 /* Tab 3 - ART */
 
@@ -99,9 +98,88 @@ a:hover, button:hover, .clickable:hover {
 }
 
 /* Tab 5 - CONTACT */
+#computer-video {
+  max-width: 700px;
+}
+#computer-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+#contact-me-section{
+  background-color: #925773;
+  margin-bottom: 10%;
+  margin-bottom: 2%;
+}
 
+/* Style the main loading screen container */
+#loading-screen {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
 
+/* OUTER BORDER (fixed size) */
+#loader-frame {
+  height: 80px;
+  border: 3px solid #0000FF;
+  padding: 10px;
+  box-sizing: border-box;
+}
 
+/* INNER GROWING BAR */
+#loader-fill {
+  height: 100%;
+  width: 0;
+  background: #0000FF;
+  transform-origin: left;
+  animation-timing-function: steps(4, end);
+  animation: fill-bar 5s forwards;
+}
+
+@keyframes fill-bar {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* typewriter effect */
+#loading-text {
+  color:#0000FF;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(30, end)
+}
+
+#loading-text::after {
+  color:#0000FF;
+  content: '|';
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Blink animation */
+@keyframes blink-caret {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
 
 /* karaoke font taken from internet*/
 h1 {
@@ -132,24 +210,3 @@ h1 {
   from { width: 0 }
   to { width: 100% }
 }
-
-/* typewriter effect */
-.typewriter {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-  /*
-    background-color: #222;
-  

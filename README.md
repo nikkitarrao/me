@@ -4,5 +4,3 @@ This repository contains all the necessary elements to build my very beautiful w
 ```bash
 URL: https://nikkitarrao.github.io/me/
 ```
-
-## Website Overview
