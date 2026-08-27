@@ -5,17 +5,17 @@
             "prompt": "What is your evil goal?",
             "choices": [
                 "To kill Harry Potter",
-                "To get a girlfriend",
+                "To rule the Mushroom Kingdom",
                 "Isolate and eat children",
-                "To defeat my enemies"
+                "To cause chaos in Bikini Bottom"
             ]
         },
         {
             "id": 2,
             "prompt": "What's your biggest insecurity?",
             "choices": [
-                "My nose",
-                "No bitches",
+                "Bald",
+                "Big boned",
                 "My height",
                 "My shape"
             ]
@@ -24,7 +24,7 @@
             "id": 3,
             "prompt": "Who would you want as evil henchman?",
             "choices": [
-                "Racists",
+                "My friends",
                 "Goombas",
                 "Cultists",
                 "No one, I ride solo"
@@ -35,9 +35,9 @@
             "prompt": "What evil color do you wear?",
             "choices": [
                 "Black",
-                "Black adn Silver",
+                "I don't wear clothes",
                 "I also dont wear clothes",
-                "I dont wear clothes"
+                "I don't wear clothes"
             ]
         },
         {
@@ -47,33 +47,33 @@
                 "Harry Potter",
                 "Mario",
                 "All children",
-                "Sponebob"
+                "Spongebob"
             ]
         }
     ],
     "resultsQuiz1" : [
         {
             "id": 1,
-            "creatureName" : "Voldemort",
-            "explanation": "You love to cause harry potter trouble and you have no nose!",
+            "answer" : "Voldemort",
+            "explanation": "You love to cause Harry Potter trouble! Please give him a break, he has already been through so much.",
             "photo": ""
         },
         {
             "id": 2,
-            "creatureName" : "Bowser",
-            "explanation": "You love to cause mario toruble. You are just like bowser.",
+            "answer" : "Bowser",
+            "explanation": "Just because Peach doesn't fuck with you doesn't mean you are 100% unloveable. Keep your head up king.",
             "photo": ""
         },
         {
             "id": 3,
-            "creatureName" : "The Deer",
+            "answer" : "The Deer",
             "explanation": "You are pure evil.",
             "photo": ""
         },
         {
             "id": 4,
-            "creatureName" : "The Dirty Bubble",
-            "explanation": "Sailers hate you. Squids wanna be you.",
+            "answer" : "The Dirty Bubble",
+            "explanation": "Go take a shower, you stink!",
             "photo": ""
         }
 
@@ -86,24 +86,20 @@
                 "Yes",
                 "No",
                 "Um",
-                "What does that mean?"
+                "What does this mean?"
             ]
-        },
-        {
-            "id": 2,
-            "prompt": "Whats your name??"
         }
     ],
     "resultsQuiz2" : [
         {
             "id": 1,
-            "creatureName" : "Gay",
+            "answer" : "Gay",
             "explanation": "Sorry, hate to break it to you, but somebody has to be.",
             "photo": ""
         },
         {
             "id": 2,
-            "creatureName" : "Normal",
+            "answer" : "Normal",
             "explanation": "Congrats, you are perfectly normal.",
             "photo": ""
         }
@@ -119,7 +115,7 @@
                 "a bully"
             ],
             "correctChoice": "C",
-            "explanation": "Everyone is a stranger to me."
+            "explanation": "Everyone is a stranger to me, no one knows the true me."
         },
         {
             "id": 2,
@@ -131,98 +127,107 @@
                 "Striking Brown"
             ],
             "correctChoice": "C",
-            "explanation": "This is what is says on my license."
+            "explanation": "This is what is said on my license."
         },
         {
             "id": 3,
-            "prompt": "How old am I?",
+            "prompt": "What is the name of my beloved cat?",
             "choices": [
-                "23",
-                "24",
-                "25",
-                "Age is a construct"
+                "Sancocho",
+                "Santiagirl",
+                "Santiago",
+                "San-thootie"
             ],
-            "correctChoice": "B",
-            "explanation": "I am 24..."
+            "correctChoice": "C",
+            "explanation": "We thought she was a boy at first."
         },
         {
             "id": 4,
             "prompt": "Who is my number one hater?",
-            "explanation": "I was just curious to know."
+            "choices": [
+                "",
+                "",
+                "",
+                "Trick question, no one"
+            ],
+            "correctChoice": "C",
+            "explanation": "We thought she was a boy at first."
         },
         {
             "id": 5,
-            "prompt": "Do I snore?",
+            "prompt": "Which one do I love the most?",
             "choices": [
-                "Yes",
-                "No",
-                "Nah",
+                "Wegovy",
+                "Tremfya",
+                "Skyrizi",
                 "What does this mean?"
             ],
-            "correctChoice": "A",
-            "explanation": "Unfortunately, I do."
+            "correctChoice": "C",
+            "explanation": "Unfortunately, I love Skyrizi."
         }
     ],
     "resultsQuiz3" : [
         {
             "id": 1,
-            "creatureName" : "You Lose!",
+            "answer" : "You Lose!",
+            "photo": "./resources/random/",
             "explanation": "You don't know me at all, you are just like everyone else."
         },
         {
             "id": 2,
-            "creatureName" : "You Win!",
-            "explanation": "Wow, you really know the true me."
+            "answer" : "You Win!",
+            "photo": "./resources/random/scratchnsniff20.png",
+            "explanation": "Wow, you really know the true me. You are just like everyone else that knows mw."
         }
 
     ],
     "questionsQ4": [
         {
             "id": 1,
-            "prompt": "After being cancelled, how long do you wait to respond?",
+            "prompt": "What is your wii fit age",
             "choices": [
-                "24 hrs",
-                "48 hrs",
-                "I never responded",
-                "1 month"
+                "69",
+                "23 and innacurate",
+                "67",
+                "45 and accurate"
             ]
         },
         {
             "id": 2,
-            "prompt": "What type of celebrity are you?",
+            "prompt": "Who is your favorite Muppet?",
             "choices": [
-                "ASMR Youtuber",
-                "Twitch Streamer",
-                "Family Vlogger",
-                "Professional Tweeter (Reply Guy)"
+                "Kermit",
+                "Beaker",
+                "Animal",
+                "Gonzo"
             ]
         },
         {
             "id": 3,
-            "prompt": "How did you respond to your cancellation?",
+            "prompt": "Whats your idea of the perfect day?",
             "choices": [
-                "Ukelele apology",
-                "Doubled down",
-                "Took a social media cleanse",
-                "Cried on facebook live"
+                "Drink water and mind my business",
+                "Go bowling",
+                "Anything but bowling",
+                "Jump on the trampoline"
             ]
         },
         {
             "id": 4,
-            "prompt": "What is your life like after cancellelation?",
+            "prompt": "What do you like to do in your free time?",
             "choices": [
-                "Nothing changed",
-                "Went to jail",
-                "Blacklisted",
-                "Got cancelled again for something else"
+                "Bat my eyelashes",
+                "Dance around",
+                "Listen to the sounds of the animals",
+                "Fly to the moon"
             ]
         },
         {
             "id": 5,
-            "prompt": "What were you in middle school?",
+            "prompt": "What were you in high school?",
             "choices": [
                 "Emo",
-                "Posh",
+                "Loser reject freak",
                 "Nerd",
                 "Normal"
             ]
@@ -231,23 +236,27 @@
     "resultsQuiz4" : [
         {
             "id": 1,
-            "reason" : "Ugly Husband",
-            "photo": ""
+            "answer" : "Ugly Husband",
+            "explanation": "Oof, sorry, you start tomorrow.",
+            "photo": "./resources/random/"
         },
         {
             "id": 2,
-            "reason" : "Shoplifting",
-            "photo": ""
+            "answer" : "DJ",
+            "explanation": "",
+            "photo": "./resources/random/"
         },
         {
             "id": 3,
-            "reason" : "Coming Out as Straight",
-            "photo": ""
+            "answer" : "Zookeeper",
+            "explanation": "Girl you love animals, girl. You would be perect in this zoo!",
+            "photo": "./resources/random/"
         },
         {
             "id": 4,
-            "reason" : "Aggravated Assault",
-            "photo": ""
+            "answer" : "Head of NASA",
+            "explanation": "Pack your bags, you're going to the moon!",
+            "photo": "./resources/random/"
         }
     ]
 }
