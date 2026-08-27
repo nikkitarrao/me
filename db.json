@@ -6,7 +6,7 @@
             "choices": [
                 "To kill Harry Potter",
                 "To rule the Mushroom Kingdom",
-                "Isolate and eat children",
+                "To self-sabotoge",
                 "To cause chaos in Bikini Bottom"
             ]
         },
@@ -16,7 +16,7 @@
             "choices": [
                 "Bald",
                 "Big boned",
-                "My height",
+                "Can't do anything right",
                 "My shape"
             ]
         },
@@ -24,10 +24,10 @@
             "id": 3,
             "prompt": "Who would you want as evil henchman?",
             "choices": [
-                "My friends",
+                "Death Eaters",
                 "Goombas",
-                "Cultists",
-                "No one, I ride solo"
+                "No one, I ride solo",
+                "E.V.I.L"
             ]
         },
         {
@@ -46,7 +46,7 @@
             "choices": [
                 "Harry Potter",
                 "Mario",
-                "All children",
+                "Myself",
                 "Spongebob"
             ]
         }
@@ -66,8 +66,8 @@
         },
         {
             "id": 3,
-            "answer" : "The Deer",
-            "explanation": "You are pure evil.",
+            "answer" : "You",
+            "explanation": "You are your own worst enemy. Stop holding yourself back king. Keep your head up.",
             "photo": ""
         },
         {
@@ -93,15 +93,15 @@
     "resultsQuiz2" : [
         {
             "id": 1,
-            "answer" : "Gay",
+            "answer" : "You are Gay",
             "explanation": "Sorry, hate to break it to you, but somebody has to be.",
-            "photo": ""
+            "photo": "./resources/random/clown3.png"
         },
         {
             "id": 2,
-            "answer" : "Normal",
+            "answer" : "You are Normal",
             "explanation": "Congrats, you are perfectly normal.",
-            "photo": ""
+            "photo": "./resources/random/scratchnsniff20.png"
         }
     ], 
     "questionsQ3": [
@@ -115,7 +115,7 @@
                 "a bully"
             ],
             "correctChoice": "C",
-            "explanation": "Everyone is a stranger to me, no one knows the true me."
+            "q-explanation": "Everyone is a stranger to me, no one knows the true me."
         },
         {
             "id": 2,
@@ -127,7 +127,7 @@
                 "Striking Brown"
             ],
             "correctChoice": "C",
-            "explanation": "This is what is said on my license."
+            "q-explanation": "This is what is said on my license."
         },
         {
             "id": 3,
@@ -139,7 +139,7 @@
                 "San-thootie"
             ],
             "correctChoice": "C",
-            "explanation": "We thought she was a boy at first."
+            "q-explanation": "We thought she was a boy at first."
         },
         {
             "id": 4,
@@ -151,7 +151,7 @@
                 "Trick question, no one"
             ],
             "correctChoice": "C",
-            "explanation": "We thought she was a boy at first."
+            "q-explanation": "We thought she was a boy at first."
         },
         {
             "id": 5,
@@ -163,21 +163,21 @@
                 "What does this mean?"
             ],
             "correctChoice": "C",
-            "explanation": "Unfortunately, I love Skyrizi."
+            "q-explanation": "Unfortunately, I love Skyrizi."
         }
     ],
     "resultsQuiz3" : [
         {
             "id": 1,
             "answer" : "You Lose!",
-            "photo": "./resources/random/",
+            "photo": "./resources/random/clown1.png",
             "explanation": "You don't know me at all, you are just like everyone else."
         },
         {
             "id": 2,
             "answer" : "You Win!",
-            "photo": "./resources/random/scratchnsniff20.png",
-            "explanation": "Wow, you really know the true me. You are just like everyone else that knows mw."
+            "photo": "./resources/random/scratchnsniff12.png",
+            "explanation": "Wow, you really know the true me. You are just like everyone else that knows me."
         }
 
     ],
@@ -217,7 +217,7 @@
             "prompt": "What do you like to do in your free time?",
             "choices": [
                 "Bat my eyelashes",
-                "Dance around",
+                "Do calculations",
                 "Listen to the sounds of the animals",
                 "Fly to the moon"
             ]
@@ -227,8 +227,8 @@
             "prompt": "What were you in high school?",
             "choices": [
                 "Emo",
-                "Loser reject freak",
                 "Nerd",
+                "Loser reject freak",
                 "Normal"
             ]
         }
@@ -238,25 +238,25 @@
             "id": 1,
             "answer" : "Ugly Husband",
             "explanation": "Oof, sorry, you start tomorrow.",
-            "photo": "./resources/random/"
+            "photo": "./resources/random/mine.png"
         },
         {
             "id": 2,
-            "answer" : "DJ",
+            "answer" : "Computer Whiz",
             "explanation": "",
-            "photo": "./resources/random/"
+            "photo": "./resources/random/tumblr_be163e7165a4cb6d834a2c7692cf7066_b1beecce_640.png"
         },
         {
             "id": 3,
             "answer" : "Zookeeper",
             "explanation": "Girl you love animals, girl. You would be perect in this zoo!",
-            "photo": "./resources/random/"
+            "photo": "./resources/random/skateboardbears.png"
         },
         {
             "id": 4,
             "answer" : "Head of NASA",
             "explanation": "Pack your bags, you're going to the moon!",
-            "photo": "./resources/random/"
+            "photo": "./resources/random/tumblr_5ef97aa2105b78d63193ac3a15570b79_e7a32e69_500.png"
         }
     ]
 }
