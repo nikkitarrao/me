@@ -16,7 +16,7 @@
             "choices": [
                 "Bald",
                 "Big boned",
-                "Can't do anything right",
+                "I Can't do anything right",
                 "My shape"
             ]
         },
@@ -27,7 +27,7 @@
                 "Death Eaters",
                 "Goombas",
                 "No one, I ride solo",
-                "E.V.I.L"
+                "Man Ray, other evil people, etc."
             ]
         },
         {
@@ -46,7 +46,7 @@
             "choices": [
                 "Harry Potter",
                 "Mario",
-                "Myself",
+                "idk",
                 "Spongebob"
             ]
         }
@@ -56,25 +56,25 @@
             "id": 1,
             "answer" : "Voldemort",
             "explanation": "You love to cause Harry Potter trouble! Please give him a break, he has already been through so much.",
-            "photo": ""
+            "photo": "./resources/random/voldemort.png"
         },
         {
             "id": 2,
             "answer" : "Bowser",
             "explanation": "Just because Peach doesn't fuck with you doesn't mean you are 100% unloveable. Keep your head up king.",
-            "photo": ""
+            "photo": "./resources/random/bowser.png"
         },
         {
             "id": 3,
             "answer" : "You",
-            "explanation": "You are your own worst enemy. Stop holding yourself back king. Keep your head up.",
+            "explanation": "You are your own worst enemy. Stop holding yourself back.",
             "photo": ""
         },
         {
             "id": 4,
             "answer" : "The Dirty Bubble",
             "explanation": "Go take a shower, you stink!",
-            "photo": ""
+            "photo": "./resources/random/dirtybubble.png"
         }
 
     ],
@@ -85,7 +85,7 @@
             "choices": [
                 "Yes",
                 "No",
-                "Um",
+                "Maybe ;)",
                 "What does this mean?"
             ]
         }
@@ -119,7 +119,7 @@
         },
         {
             "id": 2,
-            "prompt": "What color are my eyes ? (no peaking)?",
+            "prompt": "What color are my eyes? (no peaking)",
             "choices": [
                 "Striking Blue",
                 "Striking Green",
@@ -133,37 +133,37 @@
             "id": 3,
             "prompt": "What is the name of my beloved cat?",
             "choices": [
+                "Santiago",
                 "Sancocho",
                 "Santiagirl",
-                "Santiago",
                 "San-thootie"
             ],
-            "correctChoice": "C",
+            "correctChoice": "A",
             "q-explanation": "We thought she was a boy at first."
         },
         {
             "id": 4,
-            "prompt": "Who is my number one hater?",
+            "prompt": "What is my role in society?",
             "choices": [
-                "",
-                "",
-                "",
-                "Trick question, no one"
+                "Observer",
+                "Bystander",
+                "Leader",
+                "Sheep"
             ],
-            "correctChoice": "C",
-            "q-explanation": "We thought she was a boy at first."
+            "correctChoice": "A",
+            "q-explanation": "I might not seem like it, but I observe more than the average human."
         },
         {
             "id": 5,
-            "prompt": "Which one do I love the most?",
+            "prompt": "What is my deepest darkest secret?",
             "choices": [
-                "Wegovy",
-                "Tremfya",
-                "Skyrizi",
-                "What does this mean?"
+                "I work too hard",
+                "I care too much",
+                "I snore",
+                "Nothing, I am an open book"
             ],
-            "correctChoice": "C",
-            "q-explanation": "Unfortunately, I love Skyrizi."
+            "correctChoice": "D",
+            "q-explanation": "It's true, ask me anything!"
         }
     ],
     "resultsQuiz3" : [
@@ -184,11 +184,11 @@
     "questionsQ4": [
         {
             "id": 1,
-            "prompt": "What is your wii fit age",
+            "prompt": "What is your wii fit age?",
             "choices": [
                 "69",
                 "23 and innacurate",
-                "67",
+                "25 and somewhat accurate",
                 "45 and accurate"
             ]
         },
@@ -204,21 +204,21 @@
         },
         {
             "id": 3,
-            "prompt": "Whats your idea of the perfect day?",
+            "prompt": "What's your idea of the perfect day?",
             "choices": [
-                "Drink water and mind my business",
                 "Go bowling",
                 "Anything but bowling",
-                "Jump on the trampoline"
+                "Drink water and mind my business",
+                "Reach for the stars"
             ]
         },
         {
             "id": 4,
             "prompt": "What do you like to do in your free time?",
             "choices": [
-                "Bat my eyelashes",
+                "Freak the freak out",
                 "Do calculations",
-                "Listen to the sounds of the animals",
+                "Listen to the sweet sweet sounds of the animals",
                 "Fly to the moon"
             ]
         },
@@ -226,9 +226,9 @@
             "id": 5,
             "prompt": "What were you in high school?",
             "choices": [
-                "Emo",
-                "Nerd",
                 "Loser reject freak",
+                "Nerd",
+                "Jock",
                 "Normal"
             ]
         }
@@ -237,19 +237,19 @@
         {
             "id": 1,
             "answer" : "Ugly Husband",
-            "explanation": "Oof, sorry, you start tomorrow.",
+            "explanation": "Oof, sorry, you start tomorrow...",
             "photo": "./resources/random/mine.png"
         },
         {
             "id": 2,
             "answer" : "Computer Whiz",
-            "explanation": "",
+            "explanation": "According to my calculations, you are the biggest nerd!",
             "photo": "./resources/random/tumblr_be163e7165a4cb6d834a2c7692cf7066_b1beecce_640.png"
         },
         {
             "id": 3,
             "answer" : "Zookeeper",
-            "explanation": "Girl you love animals, girl. You would be perect in this zoo!",
+            "explanation": "Girl, you love animals, girl. You would be perfect in this zoo!",
             "photo": "./resources/random/skateboardbears.png"
         },
         {
